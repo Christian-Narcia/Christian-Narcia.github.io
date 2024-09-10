@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay" onclick="toggleSidebar()"></div>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="nav">
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div id="about" class="content-section">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio. My name is Christian Narica.</p>
+            </div>
+            <div id="resume" class="content-section">
+                <h2>Resume</h2>
+                <p>Here you will be able to view my resume...</p>
+            </div>
+            <div id="portfolio" class="content-section">
+                <h2>Portfolio</h2>
+                <p>Soon you will be able to check out some of my projects...</p>
+            </div>
+            <div id="contact" class="content-section">
+                <h2>Contact</h2>
+                <p>Get in touch with me... soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Button to toggle the sidebar -->
+    <div class="profile-btn" onclick="toggleSidebar()">
+        <img src="prof_img.jpeg" alt="Profile Picture" class="profile-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
