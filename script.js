@@ -19,8 +19,28 @@ function showSection(sectionId) {
 }
 
 function toggleSidebar() {
+    // Check if the screen width is 768px or less
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+}
+function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('.overlay');
+    const content = document.querySelector('.content');
+
     sidebar.classList.toggle('active');
     overlay.classList.toggle('active');
+
+    // Toggle the slide-up effect for content when sidebar is hidden
+    if (!sidebar.classList.contains('active')) {
+        content.classList.remove('slide-up');
+       
+    } else {
+        content.classList.add('slide-up');
+    }
 }
+
