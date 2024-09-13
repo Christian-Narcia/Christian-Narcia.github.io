@@ -27,6 +27,15 @@ body {
     transform: translateX(-100%);
 }
 
+.name{
+    color: #ffffff;
+    /* position: fixed; */
+    left: 20px;
+    /* background-color: #575757; */
+    padding: .3em;
+    /* border-radius: 10px; */
+    
+}
 .profile {
     text-align: center;
     cursor: pointer;
@@ -100,6 +109,12 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .name{
+        color: #ffffff;
+        position: relative;
+        left: 25%;  
+        width: 100%;    
+    }
     .content.slide-up {
         transition: transform 0.3s ease;
         transform: translateY(-150px); /* Adjust value to control how much it slides up */
@@ -124,6 +139,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    .name{
+        color: #ffffff;
+        position: relative;
+        left: 25%;  
+        width: 100%;    
+    }
     .profile-img {
         width: 80px;
         height: 80px;
