@@ -44,3 +44,33 @@ function toggleSidebar() {
     }
 }
 
+
+async function loadProjects() {
+    try {
+        // Fetch the JSON file containing project metadata
+        const response = await fetch('projects.json');
+        const projects = await response.json();
+        console.log(projects)
+        // Get the container element
+        const container = document.getElementById('grid-container');
+        container.innerHTML = ''; // Clear any existing content
+
+        // Generate HTML for each project
+        projects.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.className = 'grid-item';
+            projectDiv.innerHTML = `
+                <a href="#" target="_blank">
+                    <img src="${project.img}" alt="${project.name}">
+                    <div class="content">
+                        <h3>${project.name}</h3>
+                        <p>${project.description}</p>
+                    </div>
+                </a>
+            `;
+            container.appendChild(projectDiv);
+        });
+    } catch (error) {
+        console.error('Error loading projects:', error);
+    }
+}

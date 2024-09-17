@@ -6,7 +6,7 @@
     <title>Christian Narcia Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="showSection('about')">
     <div class="overlay" onclick="toggleSidebar()"></div>
     <div class="container">
         <!-- Sidebar -->
@@ -15,7 +15,7 @@
             <ul class="nav">
                 <li><a href="#" onclick="showSection('about')">About</a></li>
                 <li><a href="#" onclick="showSection('resume')">Resume</a></li>
-                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('research'); loadProjects();">Research</a></li>
                 <li><a href="#" onclick="showSection('contact')">Contact</a></li>
                 <li><a href="#" onclick="showSection('CurResearch')">Current Research</a></li>
             </ul>
@@ -26,14 +26,61 @@
             <div id="about" class="content-section">
                 <h2>About Me</h2>
                 <p>Welcome to my portfolio. My name is Christian Narica.</p>
+                <div class="links">
+                    <!-- <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> -->
+                    <a href="https://github.com/Christian-Narcia" target="_blank">Github</a>
+                </div>
             </div>
             <div id="resume" class="content-section">
                 <h2>Resume</h2>
                 <p>Here you will be able to view my resume...</p>
             </div>
-            <div id="portfolio" class="content-section">
-                <h2>Portfolio</h2>
+            <div id="research" class="content-section" onclick="loadProjects()">
+                <h2>Research</h2>
                 <p>Soon you will be able to check out some of my projects...</p>
+                <div class="grid-container" id="grid-container">
+                    <!-- Project divs will be dynamically inserted here -->
+                </div>
+<!--                 
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <a href="https://example.com/project1" target="_blank">
+                            <img src="prof_img.jpeg" alt="Project 1">
+                            <div class="content">
+                                <h3>Project 1</h3>
+                                <p>Brief description of Project 1.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://example.com/project2" target="_blank">
+                            <img src="prof_img.jpeg" alt="Project 2">
+                            <div class="content">
+                                <h3>Project 2</h3>
+                                <p>Brief description of Project 2.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://example.com/project2" target="_blank">
+                            <img src="prof_img.jpeg" alt="Project 2">
+                            <div class="content">
+                                <h3>Project 3</h3>
+                                <p>Brief description of Project 2.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://example.com/project2" target="_blank">
+                            <img src="prof_img.jpeg" alt="Project 2">
+                            <div class="content">
+                                <h3>Project 4</h3>
+                                <p>Brief description of Project 2.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+            
             </div>
             <div id="contact" class="content-section">
                 <h2>Contact</h2>
@@ -41,8 +88,8 @@
             </div>
             <div id="CurResearch" class="content-section">
                 <h2>Current Research</h2>
-                <p>This is what i'm working on.</p>
-                <iframe src="https://grey-pantydraco-0e9.notion.site/Research-Paper-Planner-f1848df76fb04a6897d8bf5f9d3e0bed" width="100%" height="800" style="border:none;"></iframe>
+                <p>This is what i'm working on. Embeding isn't working right now <a href="https://grey-pantydraco-0e9.notion.site/Research-Paper-Planner-f1848df76fb04a6897d8bf5f9d3e0bed">click here to open my planner</a></p>
+                <!-- <iframe src="https://grey-pantydraco-0e9.notion.site/Research-Paper-Planner-f1848df76fb04a6897d8bf5f9d3e0bed" width="100%" height="800" style="border:none;"></iframe> -->
             </div>
         </div>
         </div>

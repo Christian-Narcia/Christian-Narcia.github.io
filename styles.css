@@ -98,14 +98,113 @@ body {
     box-sizing: border-box;
 }
 
-.content-section {
+/* .content-section {
     display: none;
-}
+} */
 
 .content-section h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
+    margin-top: 0;
+    color: #333;
 }
+
+/*update Test*/
+.content-section {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.content-section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.content-section .links{
+    margin-top: 20px;
+
+}
+
+
+#about .links a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#about .links a:hover {
+    text-decoration: underline;
+}
+
+
+#CurResearch a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+#CurResearch a:hover {
+    text-decoration: underline;
+}
+
+
+/*test*/
+#research {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#research h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img, .grid-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-item .content {
+    padding: 10px;
+}
+
+.grid-item .content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

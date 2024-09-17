@@ -1,0 +1,12 @@
+[
+    {
+        "name": "IntelliBeeHive",
+        "img": "projects/IntelliBeeHive/image.jpeg",
+        "description": "Brief description of Project 1."
+    },
+    {
+        "name": "Salinity",
+        "img": "projects/Salinity/image.jpeg",
+        "description": "Brief description of Project 2."
+    }
+]
