@@ -60,7 +60,7 @@ async function loadProjects() {
             const projectDiv = document.createElement('div');
             projectDiv.className = 'grid-item';
             projectDiv.innerHTML = `
-                <a href="#" target="_blank">
+                <a href="${project.site}" target="_blank">
                     <img src="${project.img}" alt="${project.name}">
                     <div class="content">
                         <h3>${project.name}</h3>
