@@ -2,11 +2,13 @@
     {
         "name": "IntelliBeeHive",
         "img": "projects/IntelliBeeHive/image.jpeg",
-        "description": "Brief description of Project 1."
+        "description": "IntelliBeeHive is a University of Texas Rio Grande Valley project sponsored by the U.S. Department of Agriculture to monitor the honey bee's hive activity, environment, and intrusions. Honey bees play a crucial role in our environment and agriculture, and recently the honey bee population has been slowly decreasing! Our goal is to use machine learning to monitor the bee density and health of each individual hive through the use of video cameras and sensors. The data collected from our hives is fed directly to our servers and onto our webpage, thus providing us live data. ",
+        "site": "https://bee.utrgv.edu/"
     },
     {
-        "name": "Salinity",
+        "name": "Salinity Forcasting",
         "img": "projects/Salinity/image.jpeg",
-        "description": "Brief description of Project 2."
+        "description": "Lower Rio Grande River Salinity Forecasting (LRGSF) aims to provide a 6 hour to 48 hour forecasting in salinity levels of the lower Rio Grande River using various machine learning techniques, including recurrent neural networks. The goal is to forecast salinity levels from the Falcon Dam in Starr County, Texas to the Gulf of Mexico using the many gage stations along the riverbank, as shown in the image above.",
+        "site": "https://lrgsf.utrgv.edu/"
     }
 ]
