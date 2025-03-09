@@ -15,8 +15,9 @@
             <ul class="nav">
                 <li><a href="#" onclick="showSection('about')">About</a></li>
                 <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a href="#" onclick="showSection('publications')">Publications</a></li>
                 <li><a href="#" onclick="showSection('research'); loadProjects();">Research</a></li>
-                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <!-- <li><a href="#" onclick="showSection('contact')">Contact</a></li> -->
                 <li><a href="#" onclick="showSection('CurResearch')">Current Research</a></li>
             </ul>
         </div>
@@ -34,21 +35,38 @@
             <div id="resume" class="content-section">
                 <h2>Resume</h2>
                 <!-- <p>Here you will be able to view my resume...</p> -->
-                <iframe src="resume/Resume_Christian_Narcia.pdf" width="100%" height="600px"></iframe>
+                <iframe src="resume/Resume_Christian_Narcia.pdf" width="100%" height="800px"></iframe>
 
+            </div>
+            <div id="publications" class="content-section">
+                <h2>Publications</h2>
+                <div class="publications-container">
+                    <!-- <div class="publication-block" onclick="window.open('https://doi.org/10.1109/ICMLA61862.2024.00122', '_blank');" style="cursor: pointer;">
+                        <h3>IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</h3>
+                        <p><b>C. I. Narcia-Macias</b>, J. Guardado, J. Rodriguez, J. Park, J. Rampersad-Ammons, E. Enriquez, and D. Kim</p>
+                        <p><i>23rd International Conference on Machine Learning and Applications 2024</i></p>
+                    </div> -->
+                    <div class="publication-block" onclick="window.open('https://doi.org/10.1109/ICMLA61862.2024.00122', '_blank');" style="cursor: pointer;">
+                        <h3>IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</h3>
+                        <p><b>C. I. Narcia-Macias</b>, J. Guardado, J. Rodriguez, J. Park, J. Rampersad-Ammons, E. Enriquez, and D. Kim</p>
+                        <p><i>23rd International Conference on Machine Learning and Applications 2024</i></p>
+                    </div>
+            
+                    <!-- Additional publications can be added in the same format -->
+                </div>
             </div>
             <div id="research" class="content-section" onclick="loadProjects()">
                 <h2>Research</h2>
-                <p>Soon you will be able to check out some of my projects...</p>
+                <!-- <p>Soon you will be able to check out some of my projects...</p> -->
                 <div class="grid-container" id="grid-container">
                     <!-- Project divs will be dynamically inserted here -->
                 </div>
             
             </div>
-            <div id="contact" class="content-section">
+            <!-- <div id="contact" class="content-section">
                 <h2>Contact</h2>
                 <p>Get in touch with me... soon.</p>
-            </div>
+            </div> -->
             <div id="CurResearch" class="content-section">
                 <h2>Current Research</h2>
                 <p>This is what i'm working on. Embeding isn't working right now <a href="https://christian-narcia.notion.site/Research-Plan-f1848df76fb04a6897d8bf5f9d3e0bed">click here to open my planner</a></p>
