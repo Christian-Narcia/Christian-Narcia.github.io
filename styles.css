@@ -93,9 +93,11 @@ body {
 
 .content {
     flex: 1;
+    margin: auto;
     padding: 20px;
     overflow-y: auto;
     box-sizing: border-box;
+    align-items: center;
 }
 
 /* .content-section {
@@ -118,7 +120,8 @@ body {
     padding: 20px;
     max-width: 85%;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
+
 }
 
 .content-section p {
@@ -202,7 +205,9 @@ body {
     transform: scale(1.05);
 }
 
-
+section {
+    margin: 20px 0;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -240,6 +245,91 @@ body {
     margin: 5px 0;
     font-size: 16px;
 }
+
+
+/* The scrollable "form/page" container */
+.cv {
+    max-width: auto;       /* Control the container width */
+    max-height: 90vh;       /* Control the container height for scrolling */
+    margin: 0 auto;         /* Center horizontally */
+    overflow-y: auto;       /* Allow vertical scrolling */
+    background-color: #fff; /* White background for the "form" look */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Headings inside the CV container */
+    .cv h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .cv h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+    }
+    .cv h3 {
+    margin-top: .3rem;
+    margin-bottom: 0.25rem;
+    color: #242424;
+    }
+    .cv h4 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: normal;
+    font-style: italic;
+    color: #333333;
+    }
+    .cv h5 {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        font-weight: normal;
+        font-style: italic;
+        color: #5f5f5f;
+    }
+
+/* Paragraph/description text inside sections */
+.cv section {
+margin-bottom: 1.5rem;
+line-height: 1.4;
+}
+
+/* Paragraph/description text inside sections */
+.cv section {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    }
+
+    /* Skills Section */
+    .skills-category {
+    margin-bottom: 1rem;
+    }
+
+    .skills-category h4 {
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    font-style: italic;
+    color: #666;
+    }
+
+    .skills-list {
+    list-style: none;
+    display: flex;           /* Display items in a row (horizontally) */
+    flex-wrap: wrap;         /* Wrap to next line if they don't fit */
+    gap: 10px;               /* Space between each skill item */
+    margin: 0;
+    padding: 0;
+    }
+
+    .skills-list li {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
