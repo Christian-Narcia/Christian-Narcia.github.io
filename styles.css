@@ -4,6 +4,8 @@ body {
     display: flex;
     height: 100vh;
     overflow: hidden;
+    background-color: #585858;
+    background-image: linear-gradient(139deg,    rgba(36, 40, 50, 1) 0%,    rgba(36, 40, 50, 1) 0%,    rgb(39, 29, 43) 100%);
 }
 
 .container {
@@ -15,13 +17,17 @@ body {
 .sidebar {
     width: 250px;
     background-color: #000000;
+    border-color: #9b9b9b;
     color: hsl(0, 0%, 100%);
     padding: 20% 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     transform: translateX(0);
     transition: transform 0.3s ease;
+
+
 }
+
 
 .sidebar.active {
     transform: translateX(-100%);
@@ -387,6 +393,60 @@ line-height: 1.4;
     .profile-btn {
         left: 10px;
     }
+}
+
+#mode-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1200;
+    background: #222;
+    color: #fff;
+    border: 2px solid #00b7ff; /* Add a bright border for visibility */
+    border-radius: 24px;
+    width: 64px;
+    height: 32px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    transition: background 0.3s;
+}
+#mode-toggle.day {
+    background: #e0e0e0;
+    color: #222;
+    border: 2px solid #ffb700; /* Yellow border for day mode */
+}
+#mode-toggle .slider {
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border: 1.5px solid #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: left 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    font-size: 1.1em;
+}
+#mode-toggle.day .slider {
+    left: 32px;
+    background: #ffe066;
+    color: #b8860b;
+    border: 1.5px solid #ffe066;
+}
+#mode-toggle .icon {
+    flex: 1;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.1em;
 }
 
 

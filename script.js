@@ -74,3 +74,42 @@ async function loadProjects() {
         console.error('Error loading projects:', error);
     }
 }
+
+// Night/Day mode toggle with browser preference and sliding button
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+let isDay;
+
+function setMode(dayMode) {
+    if (dayMode) {
+        body.style.backgroundColor = '#fff';
+        body.style.backgroundImage = 'none';
+        modeToggle.classList.add('day');
+        slider.innerHTML = '☀️';
+        isDay = true;
+    } else {
+        body.style.backgroundColor = '#585858';
+        body.style.backgroundImage = 'linear-gradient(139deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 0%, rgb(39, 29, 43) 100%)';
+        modeToggle.classList.remove('day');
+        slider.innerHTML = '🌙';
+        isDay = false;
+    }
+}
+
+// Add slider and icon structure to the button
+if (modeToggle && !modeToggle.querySelector('.slider')) {
+    modeToggle.innerHTML = '<span class="icon"></span><span class="slider">🌙</span>';
+}
+const slider = modeToggle.querySelector('.slider');
+
+// Detect browser preference on load
+window.addEventListener('DOMContentLoaded', () => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setMode(!prefersDark);
+});
+
+if (modeToggle) {
+    modeToggle.addEventListener('click', () => {
+        setMode(!isDay);
+    });
+}
