@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Narcia Portfolio</title>
+    <meta name="description" content="Christian Narcia - PhD Computer Science Student specializing in Machine Learning, Computer Vision, and Embedded Systems at University of Texas Rio Grande Valley">
+    <meta name="keywords" content="PhD, Computer Science, Machine Learning, Computer Vision, Embedded Systems, Research">
+    <title>Christian Narcia - PhD Computer Science Researcher</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body onload="showSection('about')">
     <div class="overlay" onclick="toggleSidebar()"></div>
@@ -14,11 +17,10 @@
             <h2 class="name"><u>Christian Narcia</u></h2>
             <ul class="nav">
                 <li><a href="#" onclick="showSection('about')">About</a></li>
-                <li><a href="#" onclick="showSection('cv')">CV</a></li>
-                <li><a href="#" onclick="showSection('publications')">Publications</a></li>
                 <li><a href="#" onclick="showSection('research'); loadProjects();">Research</a></li>
-                <!-- <li><a href="#" onclick="showSection('contact')">Contact</a></li> -->
-                <li><a href="#" onclick="showSection('CurResearch')">Current Research</a></li>
+                <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+                <li><a href="#" onclick="showSection('cv')">CV</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
             </ul>
         </div>
 
@@ -31,24 +33,49 @@
                     <a href="https://www.linkedin.com/in/christian-narcia/" target="_blank">LinkedIn</a>
                     <a href="https://github.com/Christian-Narcia" target="_blank">Github</a>
                 </div> -->
-                <div class="links">
-                <h2>Christian Narcia</h2>
-                <p>PhD Computer Science Student | Researcher | Student Instructor</p>
-                
-                    <a href="https://github.com/Christian-Narcia" target="_blank">GitHub</a> |
-                    <a href="https://www.linkedin.com/in/christian-narcia" target="_blank">LinkedIn</a>
+                <div class="academic-header">
+                    <h1>Christian Narcia</h1>
+                    <h2 class="title">PhD Computer Science Student</h2>
+                    <p class="affiliation">University of Texas Rio Grande Valley</p>
+                    <div class="contact-links">
+                        <a href="mailto:christian.narcia01@utrgv.edu">📧 Email</a>
+                        <a href="https://github.com/Christian-Narcia" target="_blank">🔗 GitHub</a>
+                        <a href="https://www.linkedin.com/in/christian-narcia" target="_blank">🔗 LinkedIn</a>
+                        <a href="https://miutrgv.github.io/" target="_blank">🎓 MI Lab</a>
+                    </div>
                 </div>
+                
+                <section class="research-interests">
+                    <h2>Research Interests</h2>
+                    <div class="interests-grid">
+                        <div class="contact-item">
+                            <h3>🤖 Machine Learning</h3>
+                            <p>Reinforcement learning, Large Language Models, and adaptive systems</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>👁️ Computer Vision</h3>
+                            <p>Vision Language Models, Vision-based robotic control, behavioral analysis, and embedded vision systems</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🔧 Embedded Systems</h3>
+                            <p>IoT applications, edge computing, and hardware-software integration</p>
+                        </div>
+                    </div>
+                </section>
+                
                 <section>
                     <h2>About Me</h2>
                     <p>
-                        I am a passionate Computer Science researcher and developer with a focus on <strong>machine learning</strong>, <strong>computer vision</strong>, and <strong>embedded systems</strong>. 
-                        Currently pursuing a <strong>PhD at the University of Texas Rio Grande Valley</strong>.
+                        I am a PhD student in Computer Science at the University of Texas Rio Grande Valley, specializing in the intersection of 
+                        <strong>machine learning</strong>, <strong>computer vision</strong>, and <strong>embedded systems</strong>. My research focuses on 
+                        developing intelligent systems that can adapt and learn in dynamic environments, with applications in robotics, agriculture, 
+                        and environmental monitoring.
                     </p>
                 </section>
                 <section>
                     <h2>Education</h2>
                     <ul>
-                        <li><strong>PhD in Computer Science</strong> - University of Texas Rio Grande Valley (Aug 2024 - Present)</li>
+                        <li><strong>PhD in Science Computer Science with Interdisplinary Applications</strong> - University of Texas Rio Grande Valley (Aug 2024 - Present)</li>
                         <li><strong>Master of Science in Computer Science</strong> - University of Texas Rio Grande Valley (Aug 2021 - Dec 2023)</li>
                         <li><strong>Bachelor of Science in Computer Science</strong> - University of Texas Rio Grande Valley (Aug 2014 - May 2021)</li>
                     </ul>
@@ -130,47 +157,85 @@
             </div>
 
             <div id="publications" class="content-section">
-                <h2>Publications</h2>
+                <h2>Publications & Research Output</h2>
                 <div class="publications-container">
-                    <!-- <div class="publication-block" onclick="window.open('https://doi.org/10.1109/ICMLA61862.2024.00122', '_blank');" style="cursor: pointer;">
-                        <h3>IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</h3>
-                        <p><b>C. I. Narcia-Macias</b>, J. Guardado, J. Rodriguez, J. Park, J. Rampersad-Ammons, E. Enriquez, and D. Kim</p>
-                        <p><i>23rd International Conference on Machine Learning and Applications 2024</i></p>
-                    </div> -->
-                    <div class="publication-block no-hover">
+                    
+                    
+                    
+                    
+                    <h3 style="margin-top: 2rem;">Works in Progress</h3>
+                    <div class="publication-block under-review">
+                        <h3>Lower Rio Grande/Rio Bravo Two-Day Salinity Level Forecasting Using Artificial Intelligence</h3>
+                        <p><strong>C. Narcia-Macias</strong>, J. Velazquez, J. Guardado, E. Enriquez, J. Ho, D. Kim</p>
+                        <!-- <p><em>In preparation for ...</em></p> -->
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Accepted Papers</h3>    
+                    <div class="publication-block accepted">
+                        <h3>Guided Exploration in Sparse Reward Environments using Causal Prior Knowledge</h3>
+                        <p>E. Enriquez, <strong>C. Narcia-Macias</strong>, D. Masamba, D. Kim</p>
+                        <p><em>International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA), 2025</em></p>
+                    </div>
+
+                    <h3>Peer-Reviewed Publications</h3>     
+                    <div class="publication-block published" onclick="window.open('https://link.springer.com/book/9789819664405', '_blank');" style="cursor: pointer;">
                         <h3>Offline Reinforcement Learning Approaches for Safe and Effective Smart Grid Control</h3>
-                        <p>A. Peredo, H. Lugo, <b>C. Narcia-Macias</b>, J. Espinoza, D. Masamba, A. Gandarilla, E. Enriquez, D. Kim</p>
-                        <p><i>10th International Congress on Information and Communication Technology 2025</i></p>
+                        <p>A. Peredo, H. Lugo, <strong>C. Narcia-Macias</strong>, J. Espinoza, D. Masamba, A. Gandarilla, E. Enriquez, D. Kim</p>
+                        <p><em>10th International Congress on Information and Communication Technology (ICT), 2025</em></p>
                     </div>
-                    <div class="publication-block no-hover">
+                    
+                    <div class="publication-block published" onclick="window.open('https://link.springer.com/book/9789819664405', '_blank');" style="cursor: pointer;">
                         <h3>Personalized Chemotherapy Dosing through Offline Reinforcement Learning</h3>
-                        <p>H. Lugo, A. Peredo, <b>C. Narcia-Macias</b>, J. Espinoza, D. Masamba, A. Gandarilla, E. Enriquez, D. Kim</p>
-                        <p><i>10th International Congress on Information and Communication Technology 2025</i></p>
-                    </div>
-                    <div class="publication-block" onclick="window.open('https://doi.org/10.1109/ICMLA61862.2024.00122', '_blank');" style="cursor: pointer;">
+                        <p>H. Lugo, A. Peredo, <strong>C. Narcia-Macias</strong>, J. Espinoza, D. Masamba, A. Gandarilla, E. Enriquez, D. Kim</p>
+                        <p><em>10th International Congress on Information and Communication Technology (ICT), 2025</em></p>
+                    </div>               
+                    <div class="publication-block published" onclick="window.open('https://doi.org/10.1109/ICMLA61862.2024.00122', '_blank');" style="cursor: pointer;">
                         <h3>IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</h3>
-                        <p><b>C. Narcia-Macias</b>, J. Guardado, J. Rodriguez, J. Park, J. Rampersad-Ammons, E. Enriquez, and D. Kim</p>
-                        <p><i>23rd International Conference on Machine Learning and Applications 2024</i></p>
+                        <p><strong>C. Narcia-Macias</strong>, J. Guardado, J. Rodriguez, J. Park, J. Rampersad-Ammons, E. Enriquez, and D. Kim</p>
+                        <p><em>Proceedings of the 23rd International Conference on Machine Learning and Applications (ICMLA), 2024</em></p>
+                        <p><strong>DOI:</strong> 10.1109/ICMLA61862.2024.00122</p>
                     </div>
-            
-                    <!-- Additional publications can be added in the same format -->
                 </div>
             </div>
             <div id="research" class="content-section" onclick="loadProjects()">
-                <h2>Research</h2>
-                <!-- <p>Soon you will be able to check out some of my projects...</p> -->
-                <div class="grid-container" id="grid-container">
-                    <!-- Project divs will be dynamically inserted here -->
+                <h2>Research Projects</h2>
+                <p class="contact-item">
+                    My research explores machine learning, computer vision, and embedded systems, with a focus on adaptive models, vision-based robotic control, and edge applications..
+                </p>
+                
+                <div class="research-categories">
+                    <h3>🔬 Research Project Webpages</h3>
+                    <div class="grid-container" id="grid-container">
+                        <!-- Project divs will be dynamically inserted here -->
+                    </div>
                 </div>
-            
+                
             </div>
             <!-- <div id="contact" class="content-section">
                 <h2>Contact</h2>
                 <p>Get in touch with me... soon.</p>
             </div> -->
-            <div id="CurResearch" class="content-section">
-                <h2>Current Research</h2>
-                <p>This is my Notion link to see what I am working on right now: <a href="https://christian-narcia.notion.site/Summer-Research-2025-206e533e4d0280fc9698ed441266314f">Click here to open my Notion!</a></p>
+            
+            <div id="contact" class="content-section">
+                <h2>Contact & Collaboration</h2>
+                <div class="contact-grid">
+
+                    <div class="contact-item" onclick="window.open('https://miutrgv.github.io', '_blank');" style="cursor: pointer;">
+                        <h3>🏢 Machine Intelligence Lab</h3>
+                        <p>Computer Science Department<br>University of Texas Rio Grande Valley</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>christian.narcia01@utrgv.edu</p>
+                    </div>
+                </div>
+                <div class="current-research">
+                    <h3>Current Research Activities</h3>
+                    <p>For detailed information about my ongoing research projects and progress: 
+                    <a href="https://christian-narcia.notion.site/Summer-Research-2025-206e533e4d0280fc9698ed441266314f" target="_blank">
+                        View Research Notebook 📋
+                    </a></p>
+                </div>
             </div>
         </div>
         </div>
