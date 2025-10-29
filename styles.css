@@ -180,18 +180,28 @@ body {
 
 .contact-links a {
     text-decoration: none;
-    color: #3498db;
+    color: #023353;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    background: #ecf0f1;
+    background: #e5e5e5;
     transition: all 0.3s ease;
 }
 
 .contact-links a:hover {
-    background: #3498db;
+    background: #84bfe5;
     color: white;
     transform: translateY(-2px);
+}
+
+/* Small icon images inside contact links */
+.contact-links .icon {
+    height: 16px;       /* shrink overall visual size */
+    width: auto;        /* preserve aspect ratio for non-square logos */
+    vertical-align: middle;
+    margin-right: 6px;
+    object-fit: contain;
+    /* background-color: rgba(22, 22, 22, 0.027); */
 }
 
 /* Research Interests Grid */
@@ -264,7 +274,7 @@ body {
 }
 
 .contact-item {
-    background: #f8f9fa;
+    background: #e5e5e5;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
@@ -275,9 +285,17 @@ body {
     color: #2c3e50;
 }
 
+/* Icon inside contact grid headings */
+.contact-item .icon {
+    height: 18px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
 .contact-item p {
     margin: 0;
-    color: #555;
+    color: #555555;
 }
 
 .contact-item a {
@@ -408,7 +426,7 @@ body {
 }
 
 .content-section p {
-    color: #555;
+    color: #222222;
     line-height: 1.6;
 }
 
@@ -467,6 +485,19 @@ body {
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+.grid-item a {
+    display: block;
+    text-decoration: none; /* Remove default underline on project cards */
+    color: inherit;        /* Inherit text color from container */
+}
+
+.grid-item a:hover,
+.grid-item a:focus,
+.grid-item a:active {
+    text-decoration: none; /* Keep underline off on interaction */
+    outline: none;
 }
 
 .grid-item img, .grid-item video {
@@ -545,13 +576,19 @@ body {
     color: #555;
     line-height: 1.5;
 }
+.publication-block p.doi {
+    font-size: 0.85rem;
+}
+.publication-block em{
+    color: #7f8c8d;
+}
 
 .publication-block p:first-of-type {
     font-weight: 500;
     color: #34495e;
 }
 
-.publication-block p:last-of-type {
+.publication-block p:last-of-type:not(:only-of-type) {
     font-style: italic;
     color: #7f8c8d;
     font-size: 0.9rem;
@@ -655,6 +692,13 @@ line-height: 1.4;
     }
 
     /* Skills Section */
+    .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+    }
+
     .skills-category {
     margin-bottom: 1rem;
     }
@@ -681,6 +725,18 @@ line-height: 1.4;
     border-radius: 4px;
     font-size: 0.95rem;
     }
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
