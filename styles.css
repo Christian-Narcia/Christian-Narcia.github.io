@@ -298,6 +298,23 @@ body {
     color: #555555;
 }
 
+/* Email protection styles */
+.email-protected {
+    cursor: pointer;
+    color: #3498db;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.email-protected:hover {
+    color: #2980b9;
+}
+
+.email-revealed {
+    cursor: text;
+    user-select: all;
+}
+
 .contact-item a {
     color: #3498db;
     text-decoration: none;

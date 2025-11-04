@@ -113,3 +113,30 @@ if (modeToggle) {
         setMode(!isDay);
     });
 }
+
+// Email obfuscation to prevent bot spam
+function revealEmail(event, location) {
+    event.preventDefault();
+    
+    // Obfuscated email parts (stored separately to avoid bot scraping)
+    const user = 'christian.narcia01';
+    const domain = 'utrgv';
+    const tld = 'edu';
+    const email = user + '@' + domain + '.' + tld;
+    
+    if (location === 'header') {
+        const link = document.getElementById('email-link-header');
+        link.href = 'mailto:' + email;
+        link.textContent = '📧 ' + email;
+        link.onclick = null; // Remove the onclick after revealing
+    } else if (location === 'contact') {
+        const display = document.getElementById('email-display');
+        display.textContent = email;
+        display.style.cursor = 'text';
+        display.onclick = null; // Remove the onclick after revealing
+        
+        // Make it selectable/copyable
+        display.classList.remove('email-protected');
+        display.classList.add('email-revealed');
+    }
+}

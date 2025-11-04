@@ -38,7 +38,7 @@
                     <h2 class="title">PhD Computer Science Student</h2>
                     <p class="affiliation">University of Texas Rio Grande Valley</p>
                     <div class="contact-links">
-                        <a href="mailto:christian.narcia01@utrgv.edu">📧 Email</a>
+                        <a href="#" id="email-link-header" onclick="revealEmail(event, 'header')">📧 Email</a>
                         <a href="https://github.com/Christian-Narcia" target="_blank"><img src="icons/github-mark.png" alt="GitHub" class="icon"> GitHub</a>
                         <a href="https://www.linkedin.com/in/christian-narcia" target="_blank"><img src="icons/LI-In-Bug.png" alt="LinkedIn" class="icon"> LinkedIn</a>
                         <a href="https://miutrgv.github.io/" target="_blank"><img src="icons/miutrgv_logo.png" alt="MI Lab" class="icon"> MI Lab</a>
@@ -208,7 +208,7 @@
             <div id="research" class="content-section" onclick="loadProjects()">
                 <h2>Research Webpages</h2>
                 <p class="contact-item">
-                    My research explores machine learning, computer vision, and embedded systems, vision-based robotic control, and edge applications.
+                    My research explores machine learning, computer vision, embedded systems, vision-based robotic control, and edge applications.
                 </p>
                 
                 <div class="research-categories">
@@ -230,7 +230,7 @@
                     </div>
                     <div class="contact-item">
                         <h3>📧 Email</h3>
-                        <p>christian.narcia01@utrgv.edu</p>
+                        <p id="email-display" class="email-protected" onclick="revealEmail(event, 'contact')">Click to reveal email</p>
                     </div>
                 </div>
                 <div class="current-research">
