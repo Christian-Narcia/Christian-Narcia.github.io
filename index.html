@@ -17,7 +17,7 @@
             <h2 class="name"><u>Christian Narcia</u></h2>
             <ul class="nav">
                 <li><a href="#" onclick="showSection('about')">About</a></li>
-                <li><a href="#" onclick="showSection('research'); loadProjects();">Research</a></li>
+                <li><a href="#" onclick="showSection('research'); loadProjects();">Research Webpages</a></li>
                 <li><a href="#" onclick="showSection('publications')">Publications</a></li>
                 <li><a href="#" onclick="showSection('cv')">CV</a></li>
                 <li><a href="#" onclick="showSection('contact')">Contact</a></li>
@@ -50,7 +50,7 @@
                     <div class="interests-grid">
                         <div class="contact-item">
                             <h3>Computer Vision</h3>
-                            <p>Vision Language Models, Vision-based robotic control, behavioral analysis, and embedded vision systems</p>
+                            <p>Vision Language Models, Vision Language Models, Vision-based robotic control, behavioral analysis</p>
                         </div>
                         <div class="contact-item">
                             <h3>Machine Learning</h3>
@@ -69,7 +69,7 @@
                         I am a PhD student in Computer Science at the University of Texas Rio Grande Valley, specializing in the intersection of 
                         <strong>machine learning</strong>, <strong>computer vision</strong>, and <strong>embedded systems</strong>. My research focuses on 
                         developing intelligent systems that can adapt and learn in dynamic environments, with applications in robotics, agriculture, 
-                        and environmental monitoring.
+                        and environmental monitoring. My current work explores Vision-Language-Action models for robotic manipulation, developing hierarchical frameworks that enable robots to plan and execute complex tasks.
                     </p>
                 </section>
                 <section>
@@ -164,11 +164,17 @@
                     
                     
                     <h3 style="margin-top: 2rem;">Works in Progress</h3>
-                    <div class="publication-block under-review">
+                    <div class="publication-block" onclick="window.open('TODO_WORKSHOP_LINK', '_blank');" style="cursor: pointer;">
+                        <h3>Specialist VLA: Primitive-Specific Adaptation for Data-Efficient Robot Manipulation (cont.)</h3>
+                        <p><strong>C. Narcia-Macias</strong>, D. Masamba, E. Enriquez, D. Kim</p>
+                        <p><em></em></p>
+                    </div>
+
+                    <!-- <div class="publication-block under-review">
                         <h3>Lower Rio Grande/Rio Bravo Two-Day Salinity Level Forecasting Using Artificial Intelligence</h3>
                         <p><strong>C. Narcia-Macias</strong>, J. Velazquez, J. Guardado, E. Enriquez, J. Ho, D. Kim</p>
                         
-                    </div>
+                    </div> -->
                     <!-- <div class="publication-block under-review">
                         <h3>temp-title</h3>
                         <p>authors</p>
@@ -177,7 +183,16 @@
 
                     <!-- <h3 style="margin-top: 2rem;">Accepted Papers</h3>    -->
                     
-                    <h3>Publications</h3> 
+                    
+
+                    <h3>Publications & Workshop Papers</h3>
+
+                    <div class="publication-block workshop" onclick="window.open('TODO_WORKSHOP_LINK', '_blank');" style="cursor: pointer;">
+                        <h3>Specialist VLA: Primitive-Specific Adaptation for Data-Efficient Robot Manipulation</h3>
+                        <p><strong>C. Narcia-Macias</strong>, D. Masamba, E. Enriquez, D. Kim</p>
+                        <p><em>SCALE Workshop, International Conference on Machine Learning(ICML), 2026</em></p>
+                    </div>
+
                     <div class="publication-block published" onclick="window.open('https://ieeexplore.ieee.org/abstract/document/11166076', '_blank');" style="cursor: pointer;">
                         <h3>Guided Exploration in Sparse Reward Environments using Causal Prior Knowledge</h3>
                         <p>E. Enriquez, <strong>C. Narcia-Macias</strong>, D. Masamba, D. Kim</p>
@@ -185,18 +200,18 @@
                         <p class="doi"><strong>DOI:</strong> 10.1109/ACDSA65407.2025.11166076</p>
                     </div>
 
-                        
+
                     <div class="publication-block published" onclick="window.open('https://link.springer.com/book/9789819664405', '_blank');" style="cursor: pointer;">
                         <h3>Offline Reinforcement Learning Approaches for Safe and Effective Smart Grid Control</h3>
                         <p>A. Peredo, H. Lugo, <strong>C. Narcia-Macias</strong>, J. Espinoza, D. Masamba, A. Gandarilla, E. Enriquez, D. Kim</p>
                         <p><em>10th International Congress on Information and Communication Technology (ICT), 2025</em></p>
                     </div>
-                    
+
                     <div class="publication-block published" onclick="window.open('https://link.springer.com/book/9789819664405', '_blank');" style="cursor: pointer;">
                         <h3>Personalized Chemotherapy Dosing through Offline Reinforcement Learning</h3>
                         <p>H. Lugo, A. Peredo, <strong>C. Narcia-Macias</strong>, J. Espinoza, D. Masamba, A. Gandarilla, E. Enriquez, D. Kim</p>
                         <p><em>10th International Congress on Information and Communication Technology (ICT), 2025</em></p>
-                    </div>               
+                    </div>
                     <div class="publication-block published" onclick="window.open('https://doi.org/10.1109/ICMLA61862.2024.00122', '_blank');" style="cursor: pointer;">
                         <h3>IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</h3>
                         <p><strong>C. Narcia-Macias</strong>, J. Guardado, J. Rodriguez, J. Park, J. Rampersad-Ammons, E. Enriquez, and D. Kim</p>
@@ -208,7 +223,7 @@
             <div id="research" class="content-section" onclick="loadProjects()">
                 <h2>Research Webpages</h2>
                 <p class="contact-item">
-                    My research explores machine learning, computer vision, embedded systems, vision-based robotic control, and edge applications.
+                    My research focuses on machine learning, computer vision, and embedded systems, with applications in robotics, agriculture, and environmental monitoring including Vision-Language-Action models for robotic manipulation.
                 </p>
                 
                 <div class="research-categories">

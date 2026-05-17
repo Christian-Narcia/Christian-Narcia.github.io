@@ -651,6 +651,19 @@ body {
     font-weight: 500;
 }
 
+.publication-block.workshop::before {
+    content: "Workshop";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #8e44ad;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
 
 /* The scrollable "form/page" container */
 .cv {

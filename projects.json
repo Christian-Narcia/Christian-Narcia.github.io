@@ -1,5 +1,11 @@
 [
     {
+        "name": "Specialist VLA",
+        "img": "projects/SpecialistVLA/phase5_rbview.png",
+        "description": "Specialist VLA is a University of Texas Rio Grande Valley project focused on primitive-specific adaptation for data-efficient robot manipulation.",
+        "site": ""
+    },
+    {
         "name": "IntelliBeeHive",
         "img": "projects/IntelliBeeHive/image.jpeg",
         "description": "IntelliBeeHive is a University of Texas Rio Grande Valley project sponsored by the U.S. Department of Agriculture to monitor the honey bee's hive activity...",
