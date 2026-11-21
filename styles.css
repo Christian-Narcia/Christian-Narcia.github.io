@@ -101,8 +101,12 @@ body {
 .content {
     flex: 1;
     margin: auto;
+    /* margin:auto stops the flex item from stretching, so cap its height
+       or it grows past the viewport and overflow-y never scrolls */
+    max-height: 100%;
     padding: 20px;
     overflow-y: auto;
+    overflow-x: hidden;
     box-sizing: border-box;
     align-items: center;
 }
@@ -556,6 +560,7 @@ body {
 
 .publication-block {
     width: 100%;
+    box-sizing: border-box; /* keep padding/border inside the 100% width */
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 12px;
