@@ -669,6 +669,11 @@ body {
     font-weight: 500;
 }
 
+/* Status badges are hidden; delete this rule to show them again */
+.publication-block::before {
+    display: none;
+}
+
 
 /* The scrollable "form/page" container */
 .cv {
